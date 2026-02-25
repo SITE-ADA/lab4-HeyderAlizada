@@ -2,7 +2,6 @@ package az.edu.ada.wm2.lab4.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Random;
 import java.util.UUID;
 
 public class Product {
@@ -12,13 +11,10 @@ public class Product {
     private BigDecimal price;
     private LocalDate expirationDate;
 
-
     public Product() {
-        this.id = UUID.randomUUID();
     }
 
     public Product(String productName, BigDecimal price, LocalDate expirationDate) {
-        this.id = UUID.randomUUID();
         this.productName = productName;
         this.price = price;
         this.expirationDate = expirationDate;
@@ -62,7 +58,4 @@ public class Product {
     public void setExpirationDate(LocalDate expirationDate) {
         this.expirationDate = expirationDate;
     }
-
-
-
 }
